@@ -1,0 +1,76 @@
+.formulaire-glass-background {
+  background-image: url("../../assets/images/medecine-interne-2.jpg");
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.formulaire-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 411º1              00px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.formulaire-glass h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.formulaire-glass form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire-glass input,
+.formulaire-glass select {
+  border: #000000;
+  border-style: double;
+  padding: 10px;
+  margin-bottom: 15px;
+  
+  border-radius: 8px;
+  background: transparent;
+  
+}
+
+.formulaire-glass input::placeholder {
+  color: #113f67;
+}
+
+.formulaire-glass button {
+  padding: 12px;
+  background: linear-gradient(to right, #53a8b6, #04d0ef);
+
+  border-radius: 10px;
+  color: #113f67;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulaire-glass button:hover {
+  background-color: #113f67;
+  color:#000000
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,76 @@
+
+.banner-wrapper {
+  height: 100vh;
+  background-image: url('../../assets/images/Reception.png');
+  background-size:cover;
+  /* important pour afficher le haut */
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 2rem 2rem 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.banner-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  
+  .banner-content {
+    max-width: 600px;
+    text-align: left;
+    z-index: 5;
+    margin: 20px;
+  }
+  
+  .banner-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #113f67;
+  }
+  
+  .banner-content p {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 20px;
+  }
+  
+  .banner-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  
+  .banner-appointment-button {
+    padding: 0.8rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #53a8b6;
+    border: none;
+    color: #113f67;
+  }
+  
+  .banner-appointment-button a:hover{
+    color: #fff5f5;
+  }
+  
+ 
+  .banner-appointment-button a{
+    color: #113f67;
+    text-decoration: none
+  }
+  
+ 
+
+  
+
+  

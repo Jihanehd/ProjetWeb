@@ -1,0 +1,123 @@
+.glass-navbar-container {
+  z-index: 9999; /* S'assurer qu'il est au-dessus de tout */
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 0.5rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #113f67;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-items li a:hover {
+  color: #263849;
+}
+
+
+
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  background-color: #000000 !important;
+  color: #113f67;
+  list-style: none;
+  padding: 30px;
+  list-style: none;
+  min-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+  display: none;
+}
+.dropdown-menu li{
+  padding: 8px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.side-nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: #53a8b6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    background: #000000;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+  .dropdown-menu{
+    background-color: #000000 !important;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.close-icon {
+  color: #113f67  !important; /* rouge */
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+  color: #a71d2a; /* rouge foncé au survol */
+}
+
+

@@ -1,0 +1,5 @@
+.conditions-container h2 {
+  font-size: 1.2rem; /* taille plus petite que la normale */
+  margin-top: 1.5rem;
+  color: #333;
+}

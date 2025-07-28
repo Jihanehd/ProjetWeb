@@ -1,0 +1,66 @@
+.actualites-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.actualites-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a3d7c;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.actualites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.actualite-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.actualite-card:hover {
+  transform: translateY(-6px);
+}
+
+.actualite-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.actu-content {
+  padding: 20px;
+}
+
+.actu-category {
+  font-size: 0.85rem;
+  color: #0077aa;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.actu-date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.actu-text {
+  font-size: 0.95rem;
+  color: #333;
+}
